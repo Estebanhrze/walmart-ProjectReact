@@ -353,12 +353,12 @@
 
 .analytics-grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(260px, 1fr));
   gap: 16px;
 }
 
 .chart-card {
-  min-height: 360px;
+  min-height: 326px;
   padding: 16px;
 }
 
@@ -788,6 +788,22 @@ td {
 
   .filter-grid {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .analytics-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1241px) and (max-width: 1500px) {
+  .donut-wrap {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .donut {
+    margin: 0 auto;
+    max-width: 168px;
   }
 }
 
